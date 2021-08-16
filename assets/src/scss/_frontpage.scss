@@ -1,0 +1,193 @@
+html{
+  body{
+    &.home{
+      .seg-container{
+        .seg-content{
+          .seg-fp-cover{
+            >div{
+              padding: 10px 15px 20px;
+              display: block;
+              max-width: $main_width;
+              margin: 0 auto;
+            }
+            &.spinning-wheel{
+              position: relative;
+              background-image: url('../images/weaving.webp');
+              background-position:center center;
+              background-attachment: fixed;
+              background-repeat: no-repeat;
+              background-size: cover;
+              &:before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+                opacity: .3;
+              }
+            }
+          }
+          .seg-module{
+            &.seg-jumbotron{}
+            &.seg-services{
+              background-color: $red;
+              >div{
+                max-width: $main_width;
+                width: 100%;
+                margin: 0 auto;
+              }
+              .services-wrapper{
+                >div{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-items:stretch;
+                }
+                .services-item{
+                  flex-basis: 100%;
+                  position: relative;
+                  margin: 0px;
+                  padding: 0px;
+                  >div{
+                    margin:10px;
+                    padding:0px;
+                    border: 1px solid $gray;
+                    background-color: $white;
+                  }
+                  @media screen and (min-width: 768px){
+                    flex-basis: 50%;
+                  }
+                  @media screen and (min-width: 992px){
+                    flex-basis: 33%;
+                  }
+                  .si-image{
+                    margin: 0px;
+                    overflow: hidden;
+                    >img,>figure>a>img{
+                      object-fit: cover;
+                      transition: .2s;
+                    }
+                    &:hover{
+                      >img,>figure>a>img{
+                        object-fit: cover;
+                        transform: scale(1.2);
+                      }
+                    }
+                  }
+                  .si-content{
+                    padding: 20px;
+                  }
+                }
+              }
+              &.blue{
+                background-color: $blue;
+              }
+              &.green{
+                background-color: $green;
+              }
+            }
+            &.seg-reasons{
+              >div{
+                max-width: $main_width;
+                width: 100%;
+                margin: 0 auto;
+              }
+              .reasons-heading{}
+              .reasons-wrapper{
+                margin: 20px 0px;
+                >div{
+                  display: flex;
+                  flex-wrap:wrap;
+                }
+                .reasons-item{
+                  flex-basis:100%;
+                  padding: 10px 10px;
+                  text-align: center;
+                  color: $red;
+                  @media screen and (min-width: 768px){
+                    flex-basis:50%;
+                  }
+                  @media screen and (min-width: 992px){
+                    flex-basis:33%;
+                  }
+                  .ri-icon-wrapper{
+                    margin-bottom: 10px;
+                    i{
+                      &.ri-icon{
+                        &.fa-inverse{
+                          color:$white;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .reasons-button-wrapper{
+                >div{
+                  >a{
+                    text-decoration: none;
+                    color: $white !important;
+                    font-weight: 700;
+                    font-family: 'Open Sans',sans-serif;
+                    text-align: center;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    display: block;
+                    width: 100% !important;
+                    height: 42px;
+                    margin: 0 auto;
+                    background: $red;
+                    border: 2px solid $white;
+                    border-radius: 0px;
+                    transition: 0.2s;
+                    &:hover{
+                      background: $red_hi;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.no-webp{
+    body{
+      &.home{
+        .seg-container{
+          .seg-content{
+            .seg-fp-cover{
+              >div{
+                padding: 10px 15px 20px;
+                display: block;
+                max-width: $main_width;
+                margin: 0 auto;
+              }
+              &.spinning-wheel{
+                position: relative;
+                background-image: url('../images/weaving.jpg');
+                background-position:center center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:before{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  z-index: 1;
+                  opacity: .3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

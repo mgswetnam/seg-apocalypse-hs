@@ -1,0 +1,33 @@
+html{
+  body{
+    &.page,&.post-template,&.blog,&.archive,&.category,&.tag,&.single,&.post-type-archive-offer,&.search,&.error404{
+      .seg-container{
+        #secondary{
+          aside{
+            &.widget{
+              .wp-block-group{
+                padding-top:0px;
+                padding-bottom:0px;
+              }
+              .seg-widget-sidebar{
+                h3{
+                  &.seg-widget-title{
+                    display: block;
+                    color: $white;
+                    background: $red;
+                    padding: 5px 10px;
+                    margin-bottom:10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer{
+
+    }
+  }
+  &.no-webp{}
+}

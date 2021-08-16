@@ -1,0 +1,38 @@
+html{
+  body{
+    &.page,&.post-template,&.blog,&.archive,&.category,&.tag,&.single,&.post-type-archive-offer,&.search,&.error404{
+      .seg-container{
+        .seg-content{
+          #seg-web-cost-calculator{
+            margin: 20px;
+            .calc-label{
+              align-self: center;
+              font-weight: bold;
+            }
+            .calc-field{
+              .seg-calc-field{
+                &.cf-radio{}
+                &.cf-number{}
+              }
+              .cf-radio-wrap{
+                .cf-radio-option{
+                  margin: 0.5em 0px;
+                  >label{}
+                }
+              }
+            }
+            #seg-calc-total-wrapper{
+              padding: 20px;
+              margin: 20px -20px -20px -20px;
+              background: $black;
+              color: $white;
+              font-size: 1.25em;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.no-webp{}
+}

@@ -1,0 +1,205 @@
+/* Fade in */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Fade out */
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Grow into screen */
+@-webkit-keyframes grow-in {
+  0% {
+    -webkit-transform: scale(.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1
+  }
+}
+@keyframes grow-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Spin counter clockwise */
+@-webkit-keyframes counter-clockwise {
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes counter-clockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* Spin clockwise */
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* slide background in */
+@-webkit-keyframes background-position {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes background-position {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/* Slide in from the left */
+@-webkit-keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Slide in from the right */
+@-webkit-keyframes slide-from-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes slide-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Slide in from the bottom */
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html{
+  body{
+    &.home,&.page,&.post-template,&.blog,&.archive,&.category,&.tag,&.single,&.post-type-archive-offer,&.search,&.error404{
+      .seg-animation{
+        &.slide-from-left{
+          opacity:0;
+          &.sa-engage{
+            -webkit-animation: slide-from-left .8s ease .8s forwards;
+            animation: slide-from-left .8s ease .8s forwards;
+          }
+        }
+        &.slide-from-right{
+          opacity:0;
+          &.sa-engage{
+            -webkit-animation: slide-from-right .8s ease .8s forwards;
+            animation: slide-from-right .8s ease .8s forwards;
+          }
+        }
+        &.slide-up{
+          opacity:0;
+          &.sa-engage{
+            -webkit-animation: slide-up .8s ease .8s forwards;
+            animation: slide-up .8s ease .8s forwards;
+          }
+        }
+        &.fade-in{
+          opacity:0;
+          &.sa-engage{
+            -webkit-animation: fade-in .8s ease .8s forwards;
+            animation: fade-in .8s ease .8s forwards;
+          }
+        }
+      }
+    }
+  }
+}
